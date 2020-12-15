@@ -1,0 +1,263 @@
+@media screen and (max-width: 990px) {
+    body {
+        min-width: 100%;
+    }
+    .header-wrapper,
+    .activity,
+    .text-wrapper,
+    .footer-wrapper,
+    .text,
+    .gallery-content {
+        width: 100%;
+    }
+    .activity {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    }
+   
+    .popular {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-bottom: 1px solid #cccccc;
+        align-items: unset;
+        padding-bottom: 18px;
+        margin-top: 35px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .iphone img {
+        width: 70%;
+    }
+    .topic {
+        width: 60%;
+    }
+    .header-wrapper{
+        position: relative;
+    }
+    .nav {
+        align-items: baseline;
+        visibility: hidden;
+    }
+    /* .nav-wrapper {
+        position: relative;
+    } */
+    .nav-wrapper nav {
+        position: absolute;
+        left: 0;
+        top: calc(-100vh + 89px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    .nav-wrapper label {
+        width: 57px;
+        height: 43px;
+        background: #5094f2;
+        border-radius: 2px;
+        position: absolute;
+        right: calc(6% - 28px);
+        top: 28px;
+        cursor: pointer;
+    }
+    .nav-wrapper label::before {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        width: 36px;
+        height: 5px;
+        background: white;
+        content: "";
+    }
+    .nav-wrapper label span {
+        position: absolute;
+        top: calc(50% - 4px);
+        left: 10px;
+        width: 36px;
+        height: 5px;
+        background: white;
+        content: "";
+    }
+    .nav-wrapper label::after {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        width: 36px;
+        height: 5px;
+        background: white;
+        content: "";
+    
+    }
+    .nav-wrapper input[type="checkbox"] ~ ul {
+        opacity: 0;
+        /* background: red; */
+        transition: all 1s ease-in-out;
+        /* height: 150px; */
+        opacity: 0;
+    }
+    .nav-wrapper input[type="checkbox"]:checked ~ ul {
+        background: red;
+        position: absolute;
+        top: 89px;
+        left: 0;
+        height: calc(100vh + 89px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;    
+    } 
+    
+    
+}
+@media screen and (max-width: 640px) {
+    body {
+        background: red;
+    }
+    .header-wrapper,
+    .gallery-content,
+    .text,
+    .footer-wrapper,
+    .activity {
+        width: 100%;
+    }
+    .iphone {
+        width: 199px;
+    }
+    .iphone img {
+        width: 89%;
+        margin-top: 20px;
+        margin-right: 25px;
+    }
+    .gallery-wrapper::after {
+        display: none;
+    }
+    .logo {
+        margin-left: 31px;
+        margin-top: 23px;
+    }
+    .icon-logo {
+        width: 51px;
+        height: 50px;
+        font-size: 73px;
+    }
+    .icon-holder {
+        width: 137px;
+        height: 137px;
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+    .icon-holder.red img {
+        width:52%;
+    }
+    .icon-holder.yellow img {
+        width: 54%;
+    }
+    .activity {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    }
+    .popular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #cccccc;
+    align-items: unset;
+    padding-bottom: 18px;
+    margin-top: 35px;
+    }
+    .popular a {
+        font-size: 34.13px;
+        margin-bottom: 6%;
+    }
+    .popular p {
+        font-size: 19.35px;
+        text-align: unset;
+    }
+    .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    h1 {
+        font-size: 49.44px;
+        margin-top: -3px;
+    }
+    .cart {
+    padding-left: 0;
+    margin-right: 0;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .cart img {
+        width: 58%;
+    }
+    .main-text {
+        margin-top: 16px;
+        width: 473px;
+    }
+    .main-text span {
+        font-size: 34.35px;
+        margin-bottom: 22px;
+    }
+    .main-text p {
+        line-height: 36px;
+    }
+    .text-wrapper {
+        padding-bottom: 39px;
+    }
+    .lorem {
+        align-items: baseline;
+        margin-top: 3%;
+        margin-right: 55px;
+    }
+    .topic {
+        width: 285px;
+        height: unset;
+        margin-top: 0;
+        margin-right: 19px;
+    }
+    .topic h2 {
+        font-size: 31px;
+        margin-bottom: 0;
+    }
+    .topic p {
+        font-size: 22px;
+        line-height: 46px;
+        margin-bottom: 9px;
+    }
+    .sign-up {
+        margin-left: 0;
+        width: 235px;
+        height: 54px;
+        font-size: 31px;
+        padding-left: 20px;
+        padding-bottom: 8px;
+    }
+    .sign-up::before {
+        background-size: 30px 30px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: -15px;
+        top: 3px;
+    }
+    .gallery-content {
+        height: 247px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: unset;
+    }
+    
+}
