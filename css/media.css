@@ -43,10 +43,11 @@
     .nav {
         align-items: baseline;
         visibility: hidden;
+        display: none;
     }
-    /* .nav-wrapper {
-        position: relative;
-    } */
+    .nav li {
+        margin-right: unset;
+    }
     .nav-wrapper nav {
         position: absolute;
         left: 0;
@@ -98,30 +99,47 @@
     .nav-wrapper input[type="checkbox"] ~ ul {
         opacity: 0;
         /* background: red; */
-        transition: all 1s ease-in-out;
+        /* transition: all 1s ease-in-out; */
         /* height: 150px; */
         opacity: 0;
     }
     .nav-wrapper input[type="checkbox"]:checked ~ ul {
-        background: red;
-        position: absolute;
-        top: 89px;
-        left: 0;
-        height: calc(100vh + 89px);
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        opacity: 1;
-        visibility: visible;    
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 89px;
+    left: 0;
+    z-index: 10;
+    height: calc(100vh - 89px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    justify-content: space-evenly;
     } 
+    .nav-wrapper input[type="checkbox"] + label:before {
+        transition: all 0.3s linear;
+      }
+      .nav-wrapper input[type="checkbox"] + label:after {
+        transition: all 0.3s linear;
+      }
+      .nav-wrapper input[type="checkbox"]:checked + label:before {
+        transform: rotate(-45deg);
+        top: 18px;
+      }
+      .nav-wrapper input[type="checkbox"]:checked + label:after {
+        transform: rotate(45deg);
+        bottom: 20px;
+      }
+      .nav-wrapper input[type="checkbox"]:checked + label span {
+        display: none;
+      }
     
     
 }
 @media screen and (max-width: 640px) {
-    body {
-        background: red;
-    }
+    
     .header-wrapper,
     .gallery-content,
     .text,
@@ -260,4 +278,24 @@
         margin-right: unset;
     }
     
+}
+@media screen and (max-width: 540px) {
+    .nav-wrapper label {
+        right: calc(9% - 28px);
+    }
+    .iphone img {
+        width: 100%;
+    margin-top: 20px;
+    margin-right: unset;
+    }
+    .topic {
+        width: 72%;
+    }
+    .main-text {
+        width: 100%;
+    }
+    .main-text p {
+        width: 100%
+    }
+
 }
