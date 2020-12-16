@@ -21,9 +21,9 @@ a {
 display: flex;
 justify-content: space-between;
 flex-direction: column;
-height: 100vh;
+min-height: 100vh;
 }
-.main {
+main {
     flex: 1;
 }
 .header-wrapper {
@@ -245,7 +245,7 @@ height: 57%;
     font-size: 15px;
     font-family: 'SegoeLight';
     color: #979797;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .footer-wrapper a {
     color: #979797;
